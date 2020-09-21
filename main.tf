@@ -17,5 +17,12 @@ resource "aws_flow_log" "logs" {
   log_destination_type = "s3"
   traffic_type    = "ALL"
   vpc_id = data.aws_vpc.vpcs[count.index].id
-}
 
+tags = {
+    Name               = "CloudWatchEventRuleForLocalUsers"
+    "ucop:application" = "CloudWatchEvents"
+    "ucop:environment" = "production"
+    "ucop:service"     = "CloudHosting"
+    "ucop:createdBy"   = "David Rivera"
+  }
+}

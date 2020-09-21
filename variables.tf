@@ -2,6 +2,6 @@
 
 
 variable "logdest" {
-  description = "List of VPCs"
+  description = "ARN of logging destination"
   type        = string
 }

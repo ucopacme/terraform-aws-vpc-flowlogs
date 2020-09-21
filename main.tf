@@ -19,9 +19,9 @@ resource "aws_flow_log" "logs" {
   vpc_id = data.aws_vpc.vpcs[count.index].id
 
 tags = {
-    Name               = "CloudWatchEventRuleForLocalUsers"
-    "ucop:application" = "CloudWatchEvents"
-    "ucop:environment" = "production"
+    Name               = "FlowLogBoltOn"
+    "ucop:application" = "flowlogs"
+    "ucop:environment" = "dev"
     "ucop:service"     = "CloudHosting"
     "ucop:createdBy"   = "David Rivera"
   }

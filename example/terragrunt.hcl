@@ -1,6 +1,6 @@
 inputs = {
   log_destination = "arn:aws:s3:::logging-dev-bucket"
-  vpc_ids         = ["vpc-011322d88e4677c75","vpc-062a2daa70a9e5cab"]
+  vpc_ids         = ["vpc-011322d88e4677c75", "vpc-062a2daa70a9e5cab"]
   #vpc_ids         = "vpc-062a2daa70a9e5cab"
   enabled = true
   tags = {

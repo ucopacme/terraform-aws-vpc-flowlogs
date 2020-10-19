@@ -1,9 +1,9 @@
 #variable "vpc_ids" {}
 
 variable "vpc_ids" {
-default =  [ ]
-description = " "
-type = list(string)
+  default     = []
+  description = " "
+  type        = list(string)
 }
 
 variable "log_destination" {
